@@ -1,0 +1,159 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Style de la barre de navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2c3e50;
+}
+
+/* Style de la section principale */
+.main-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 1300px;
+    margin: auto;
+}
+
+/* Style du formulaire */
+form {
+    text-align: left;
+}
+
+.form-grid {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #2c3e50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttonValider {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #0b7bec;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #1c2833;
+}
+
+textarea {
+    height: 150px;
+    padding: 10px;
+}
+
+/* Style du pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style du lien de retour en haut */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+    background-color: #222;
+
+}
+
+.back-to-top:hover {
+    background-color: #1c2833;
+}
+
+/* Style du lien de retour en haut lorsqu'il est affiché */
+.back-to-top.show {
+    display: block;
+}
+
+
+.social ul {
+    list-style-type: none;
+}
+
+.social ul li {
+    display: inline;
+    padding: 1%;
+    margin-left: 250px;
+}

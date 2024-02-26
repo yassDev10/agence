@@ -1,0 +1,346 @@
+/* Réinitialisation des styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Police globale pour le site */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Rouge en code hexadécimal */
+  margin: 0;
+  padding: 0;
+}
+
+/* Pied de page */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Messages de succès et d'erreur */
+.success {
+  color: #27ae60; /* Couleur de texte verte */
+}
+
+.error {
+  color: #e74c3c; /* Couleur de texte rouge */
+}
+
+/* Menu de navigation */
+.menu {
+  background-color: #2c3e50; /* Couleur de fond du menu */
+  border-bottom: 2px solid #3498db; /* Bordure en bas du menu */
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 20px; /* Espacement entre les éléments du menu */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ecf0f1; /* Couleur du texte du menu */
+  transition: color 0.3s; /* Transition en douceur pour le changement de couleur au survol */
+}
+
+.menu ul li a:hover {
+  color: #3498db; /* Couleur du texte au survol */
+}
+
+/* Section principale */
+.main-content {
+  margin: 20px 0; /* Espacement des côtés supérieur et inférieur */
+  padding: 20px;
+}
+
+/* Zone des données */
+.col-4 {
+  width: 24%; /* Ajustement de la largeur pour un meilleur espacement */
+  background-color: #fff; /* Couleur de fond de la zone des données */
+  margin: 10px; /* Espacement autour de la zone */
+  padding: 20px;
+  float: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Tableau */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table tr td,
+table tr th {
+  padding: 10px;
+  border-bottom: 1px solid #bdc3c7; /* Bordure basse pour les cellules */
+}
+
+table tr th {
+  background-color: #3498db; /* Couleur de fond de l'en-tête */
+  color: #fff; /* Couleur du texte de l'en-tête */
+  text-align: left;
+}
+
+/* Boutons */
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px; /* Coins arrondis pour les boutons */
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #ccc; /* Couleur de fond bleue foncée au survol */
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #ecebe7; /* Couleur de fond jaune foncé au survol */
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b; /* Couleur de fond rouge foncé au survol */
+}
+
+/* Texte centré */
+.text-center {
+  text-align: center;
+}
+
+/* Conteneur principal */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour du conteneur */
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Formulaire */
+form {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Style pour les champs du formulaire */
+table.tbl-35 {
+  width: 100%;
+}
+
+table.tbl-35 td {
+  padding: 10px 0;
+}
+
+table.tbl-35 input[type="text"],
+table.tbl-35 input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Style pour le bouton d'envoi */
+table.tbl-35 input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+table.tbl-35 input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Style pour les messages d'erreur ou de succès */
+.error-message,
+.success-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.error-message {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.success-message {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+/* Style du formulaire utilisateur */
+.user-form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+}/* Style de la table du formulaire utilisateur */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.user-table td {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style des étiquettes (labels) */
+.user-label {
+  font-weight: bold;
+  padding-right: 10px;
+  vertical-align: top; /* Pour aligner le texte en haut de la cellule */
+}
+
+/* Style des champs de saisie */
+.user-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style du bouton */
+.user-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-button:hover {
+  background-color: #0056b3; /* Couleur de fond bleue foncée au survol */
+}
+
+.polling_message {
+  color: white;
+  float: left;
+  margin-right: 2%;
+}
+
+.view_port {
+  background-color: black;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* Style de base pour la liste du menu */
+ul.menu {
+  list-style-type: none;
+  display: flex;
+  background-color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style pour chaque élément de la liste du menu */
+li.menu_list {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  height: 85px;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+/* Style pour l'icône à l'avant */
+span.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #34465d;
+  color: #FFFC00;
+  transform-origin: 0 0;
+  transition: transform 0.5s ease-out;
+}
+
+/* Style pour le texte à côté de l'icône */
+a.side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFC00;
+  color: #34465d;
+  transform-origin: 0 0 85px;
+  transform: rotateY(-90deg);
+  transition: transform 0.5s ease-out;
+}
+
+/* Style lorsque la souris survole un élément du menu */
+li.menu_list:hover {
+  background-color: #3498db;
+}
+
+/* Style lorsque la souris survole le texte à côté de l'icône */
+li.menu_list:hover a.side {
+  transform: rotateY(0deg);
+}
+
+/* Style lorsque la souris survole l'icône à l'avant */
+li.menu_list:hover span.front {
+  transform: rotateY(90deg);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contactez-nous</h1>
+        <p>Votre agence de voyage préférée</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="foods.html">Destinations</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <section class="section">
+            <div class="centered-form">
+                <form action="traitement.php" method="post">
+                    <h2 class="form-grid">Contactez-nous</h2>
+
+                    <label for="nom">Nom Prénom :</label>
+                    <input class="button" type="text" id="nom" name="nom" required>
+
+                    <label for="email">Email :</label>
+                    <input class="button" type="email" id="email" name="email" required>
+
+                    <label for="adresse">Adresse :</label>
+                    <input class="button" id="adresse" name="adresse" rows="4" required>
+
+                    <label for="tel">Numéro de téléphone :</label>
+                    <input class="button" id="tel" name="tel" rows="4" required>
+
+
+                    <label for="message">Message :</label>
+                    <textarea class="button" id="message" name="message" rows="4" required></textarea>
+
+                    <input class="buttonValider" type="submit" value="Envoyer">
+                </form>
+            </div>
+            <section class="social">
+                <div class="container text-center">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        © 2023 Votre Agence de Voyage - Tous droits réservés
+    </footer>
+</body>
+
+</html>

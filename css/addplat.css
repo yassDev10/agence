@@ -1,0 +1,83 @@
+/* Style de base pour le formulaire */
+.user-form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.plat-table {
+    width: 100%;
+}
+
+.plat-label {
+    font-weight: bold;
+}
+
+.user-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.user-button {
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Animation pour le bouton soumettre */
+.user-button:hover {
+    background-color: #2c3e50;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animation pour les champs de saisie */
+.user-input:focus {
+    border-color: #2c3e50;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animation pour les étiquettes (labels) */
+.plat-label {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animation lorsque vous passez la souris sur les étiquettes */
+.plat-label:hover {
+    color: #2c3e50;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Masquer l'input file par défaut */
+.user-input[type="file"] {
+    display: none;
+}
+
+/* Style personnalisé pour le bouton de sélection de fichier */
+.custom-file-upload {
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Animation pour le bouton de sélection de fichier au survol */
+.custom-file-upload:hover {
+    background-color: #2c3e50;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
